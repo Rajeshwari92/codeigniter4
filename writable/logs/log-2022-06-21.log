@@ -1,0 +1,30 @@
+ERROR - 2022-06-21 05:54:37 --> Error connecting to the database: Unknown database 'ci4-restapi'
+CRITICAL - 2022-06-21 05:54:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4-restapi'
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posts`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\PostCon.php(55): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PostCon->getdata()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostCon))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-21 06:00:01 --> Unknown column 'posts.deleted_at' in 'where clause'
+CRITICAL - 2022-06-21 06:00:01 --> Undefined variable: user
+in APPPATH\Controllers\PostCon.php on line 85.
+ 1 APPPATH\Controllers\PostCon.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Controllers\\PostCon.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PostCon->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostCon))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-21 06:00:03 --> Unknown column 'posts.deleted_at' in 'where clause'
+CRITICAL - 2022-06-21 06:00:03 --> Undefined variable: user
+in APPPATH\Controllers\PostCon.php on line 85.
+ 1 APPPATH\Controllers\PostCon.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Controllers\\PostCon.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\PostCon->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostCon))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
