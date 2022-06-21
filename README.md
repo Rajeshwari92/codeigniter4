@@ -22,4 +22,4 @@ Run The Application
 
 you can run the application by following url
 
-http://localhost/codeigniter_practice/ci4/
+http://localhost/ci4/
